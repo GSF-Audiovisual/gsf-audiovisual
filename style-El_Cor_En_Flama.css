@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+/*
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.orbitron <uniquifier>: {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/*
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+
+/*.rubik-mono-one-regular {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap");
+
+/*.amiri-quran-regular {
+  font-family: "Amiri Quran", serif;
+  font-weight: 400;
+  font-style: normal;
+}*/
+
+@import url(fonts\papyrus.ttf);
+
+* {
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: linear-gradient(
+    150deg,
+    rgb(195, 0, 255) 3%,
+    rgb(255, 238, 0) 6%,
+    rgb(255, 0, 0) 9%,
+    rgb(71, 71, 71) 25%,
+    rgb(46, 46, 46) 50%,
+    rgb(0, 0, 0) 100%
+  );
+  font-family: Orbitron;
+}
+
+header {
+  min-height: 100vh;
+ 
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 2400px;
+  margin: 10px 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo {
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li {
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+.navbar ul li a {
+  color: black;
+}
+
+.navbar ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  display: auto;
+  margin-top: 10px;
+  text-align: center;
+  
+  
+}
+
+.header-txt {
+  flex-basis: 50%;
+  /*padding-left: 600px;*/
+  
+}
+
+.header-txt h1 {
+  font-family: "Amiri Quran", sans-serif;
+  font-size: 500%;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+}
+
+.header-txt p {
+  font-family: "Orbitron", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  color:rgb(249, 255, 161);
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 30px;
+  align-content: center;
+  background: linear-gradient(
+    130deg,
+    rgba(183, 0, 255, 1) 10%,
+    rgba(255, 238, 1, 1) 50%,
+    rgba(255, 0, 0, 1) 90%
+  );
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  }
+  
+.btn2 {
+  display: inline-block;
+  padding: 13px 13px;
+  align-content: center;
+  background: linear-gradient(
+    130deg,
+    rgb(71, 71, 71) 25%,
+    rgb(46, 46, 46) 50%,
+    rgb(0, 0, 0) 100%
+  );
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 40px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.header-img {
+  flex-basis: 100%;
+  margin-bottom: 15px;
+  
+}
+
+.header-txt2 {
+  font-family: "Amiri Quran", sans-serif;
+  font-size: 100%;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  margin-bottom: 100px;
+}
+
+
+
+@media (max-width: 991px) {
+  .menu {
+    padding: 20px;
+    position: relative;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(87, 87, 87);
+    display: none;
+  }
+
+  .menu .navbar ul {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .menu .navbar ul li a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+
+  .header-content {
+    padding: 30px;
+    margin-top: 0;
+    text-align: center;
+  }
+  .header-txt {
+    padding: 0 0 40px 0;
+  }
+
+  .header-img {
+    width: auto;
+  }
+  
+  .header-txt2 {  
+  font-size: 200%;
+  text-align: center;
+  }
